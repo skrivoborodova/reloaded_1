@@ -6,7 +6,7 @@
 /*   By: oearlene <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/04 05:35:12 by oearlene          #+#    #+#             */
-/*   Updated: 2019/09/04 05:37:33 by oearlene         ###   ########.fr       */
+/*   Updated: 2019/09/08 22:41:15 by oearlene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,4 @@ void	ft_print_numbers(void)
 		ft_putchar(i);
 		i++;
 	}
-	ft_putchar('\n');
 }

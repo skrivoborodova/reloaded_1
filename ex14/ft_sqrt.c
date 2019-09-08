@@ -6,27 +6,23 @@
 /*   By: oearlene <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 03:34:23 by oearlene          #+#    #+#             */
-/*   Updated: 2019/09/05 03:45:57 by oearlene         ###   ########.fr       */
+/*   Updated: 2019/09/08 23:10:07 by oearlene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int	ft_sqrt(int nb)
 {
-	int res;
 	int i;
-	int flag;
 
-	res = 0;
 	i = 0;
-	flag = 0;
-	while (flag == 0)
+	if (nb == 0)
+		return (0);
+	while (i * i < nb)
 	{
-		if (i * i == nb)
-		{
-			res = i;
-			flag = 1;
-		}
 		i++;
 	}
-	return (res);
+	if ((nb % i) == 0)
+		return (i);
+	else
+		return (0);
 }

@@ -6,26 +6,24 @@
 #    By: oearlene <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/08 19:40:03 by oearlene          #+#    #+#              #
-#    Updated: 2019/09/08 20:41:39 by oearlene         ###   ########.fr        #
+#    Updated: 2019/09/08 23:23:12 by oearlene         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 FLAGS = -Wall -Wextra -Werror -c
 
-SRC = ft_display_file.c
+SRC = *.c
 
 NAME = ft_display_file
 
-all: $(NAME) $(OBJ)
-
-$(OBJ): $(SRC)
-	gcc $(FLAGS) $(SRC)
+all: $(NAME)
 
 $(NAME):
-	gcc -o $(NAME) $(OBJ)
+	gcc $(FLAGS) $(SRC)
+	gcc -o $(NAME) ft_display_file.o 
 
 clean:
-	/bin/rm -f $(OBJ)
+	/bin/rm -f ft_display_file.o
 
 fclean: clean
 	/bin/rm -f $(NAME)

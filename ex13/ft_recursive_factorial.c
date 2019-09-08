@@ -6,7 +6,7 @@
 /*   By: oearlene <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/05 02:54:53 by oearlene          #+#    #+#             */
-/*   Updated: 2019/09/05 03:01:55 by oearlene         ###   ########.fr       */
+/*   Updated: 2019/09/08 22:52:17 by oearlene         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@ int	ft_recursive_factorial(int nb)
 	int res;
 
 	res = nb;
-	if (nb > 12)
+	if (nb > 12 || nb < 0)
 		return (0);
 	if (nb == 1 || nb == 0)
 		res = 1;
